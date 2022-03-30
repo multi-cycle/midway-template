@@ -15,6 +15,8 @@
     "@midwayjs/passport": "3",
     "@midwayjs/redis": "3",
     "@midwayjs/validate": "^3.0.0",
+    "add": "^2.0.6",
+    "authing-js-sdk": "^4.23.27",
     "passport": "^0.5.2",
     "pg": "^8.7.3",
     "typeorm": "^0.3.4"
