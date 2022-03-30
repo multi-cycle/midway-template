@@ -1,6 +1,6 @@
 import { EntityModel } from '@midwayjs/orm';
-import { Column, PrimaryGeneratedColumn } from 'typeorm';
-
+import { Column, PrimaryGeneratedColumn, OneToOne } from 'typeorm';
+import { PhotoMetadata } from './photoMetadata';
 @EntityModel()
 export class Photo {
   @PrimaryGeneratedColumn()
@@ -20,4 +20,7 @@ export class Photo {
 
   @Column()
   isPublished: boolean;
+
+  @OneToOne(type => PhotoMetadata, photoMetadata => photoMetadata.photo)
+  metadata: PhotoMetadata;
 }

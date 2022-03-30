@@ -2,7 +2,7 @@ import { Configuration, App } from '@midwayjs/decorator';
 import * as koa from '@midwayjs/koa';
 import * as validate from '@midwayjs/validate';
 //orm
-// import * as orm from '@midwayjs/orm';
+import * as orm from '@midwayjs/orm';
 import * as info from '@midwayjs/info';
 import { join } from 'path';
 // import { DefaultErrorFilter } from './filter/default.filter';
@@ -13,7 +13,7 @@ import { ReportMiddleware } from './middleware/report.middleware';
   imports: [
     koa,
     validate,
-    // orm,
+    orm,
     {
       component: info,
       enabledEnvironment: ['local'],
