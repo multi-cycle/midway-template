@@ -4,6 +4,7 @@ import * as validate from '@midwayjs/validate';
 //orm
 import * as orm from '@midwayjs/orm';
 import * as info from '@midwayjs/info';
+import * as crossDomain from '@midwayjs/cross-domain';
 import { join } from 'path';
 // import { DefaultErrorFilter } from './filter/default.filter';
 // import { NotFoundFilter } from './filter/notfound.filter';
@@ -14,6 +15,7 @@ import { ReportMiddleware } from './middleware/report.middleware';
     koa,
     validate,
     orm,
+    crossDomain,
     {
       component: info,
       enabledEnvironment: ['local'],
